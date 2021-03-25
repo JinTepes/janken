@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Janken-Pon</title>
+        <link rel="stylesheet" type="text/css" href="./dastyle.css">
+    </head>
+    
+    <body>
+        <script src="./gamescript.js"></script>
+    
+        <div class="container">
+    
+            <div id="header">
+                <h1>Janken~Pon!</h1>
+            </div>
+            <div id="gamestatus">
+                <h2 id="text-game-stats">GAME START!</h2>
+            </div>
+            <div id="playerscore">
+                <h3 id="plc-var">Your Score: 0</h3>
+            </div>
+            <div id="computerscore">
+                <h3 id="clc-var"> Computer Score: 0</h3>
+            </div>
+            <div id="playerhand">
+                <img src="" alt="Player Hand" id="img-playerhand">
+            </div>
+            <div id="vsicon">
+                <img src="images/Versus.png" id="img-versus">
+            </div>
+            <div id="computerhand">
+                <img src="" alt="Computer Hand" id="img-computerhand">
+            </div>
+    
+            <div id="rps-container">
+                <div id="rock">
+                    <img id="img-rockhand" src="images/rock-hand.png" alt="Rock Hand" onclick="rockClick()">
+                </div>
+                <div id="paper">
+                    <img id="img-paperhand" src="images/paper-hand.png" alt="Rock Hand" onclick="paperClick()">
+                </div>
+                <div id="scissors">
+                    <img id="img-scissorshand" src="images/scissors-hand.png" alt="Rock Hand" onclick="scissorsClick()">
+                </div>
+            </div>
+    
+            <div id="reset">
+                <button type="button" id="btn-reset" onclick="resetClick()">RESET</button>
+            </div>
+            <div id="footer">
+                <h5>Made By: Jin Tepes</h5>
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,169 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.2fr 0.3fr 300px 210px 0.4fr 0.2fr;
+    grid-template-areas: 
+    "header header header"
+    "gamestatus gamestatus gamestatus"
+    "playerscore vsicon computerscore"
+    "playerhand vsicon computerhand"
+    "rps rps rps"
+    "reset reset reset"
+    "footer footer footer";
+    grid-gap: 2px;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000a12;
+}
+
+#header{
+    background-color: #000a12;
+    color: #ffffff;
+    grid-area: header;
+    text-align: center;
+}
+
+#gamestatus{
+    background-color: #4f5b62;
+    grid-area: gamestatus;
+    text-align: center;
+    color: #ffffff;
+}
+
+#playerscore{
+    color: #ffffff;
+    background-color: #4f5b62;
+    grid-area: playerscore;
+    text-align: center;
+}
+
+#computerscore{
+    color: #ffffff;
+    background-color: #4f5b62;
+    text-align: center;
+}
+
+#playerhand{
+    background-color: #4f5b62;
+    grid-area: playerhand;
+    text-align: center;
+}
+
+#img-playerhand{
+    padding: 20px 10px 10px 10px;
+    height: 90%;
+    width: auto;
+}
+
+#img-computerhand{
+    padding: 20px 10px 10px 10px;
+    height: 90%;
+    width: auto;
+}
+
+#vsicon{
+    background-color: #4f5b62;
+    grid-area: vsicon;
+    text-align: center;
+}
+
+#img-versus{
+    margin-top: 20px;
+    height: 90%;
+    width: auto;
+}
+
+#computerhand{
+    background-color: #4f5b62;
+    grid-area: computerhand;
+    text-align: center;
+}
+
+#rps-container{
+    background-color: #4f5b62;
+    grid-area: rps;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#rock{
+    background-color: #263238;
+    text-align: center;
+}
+
+#img-rockhand{
+    padding: 20px 10px 10px 10px;
+    height: 85%;
+    width: auto;
+}
+
+#img-paperhand{
+    padding: 20px 10px 10px 10px;
+    height: 85%;
+    width: auto;
+}
+
+#img-scissorshand{
+    padding: 20px 10px 10px 10px;
+    height: 85%;
+    width: auto;
+}
+
+#paper{
+    background-color: #263238;
+    text-align: center;
+}
+
+#scissors{
+    background-color: #263238;
+    text-align: center;
+}
+
+#reset{
+    background-color: #4f5b62;
+    grid-area: reset;
+    text-align: center;
+}
+
+#btn-reset{
+    background-color: #263238;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#footer{
+    background-color: #4f5b62;
+    color: #ffffff;
+    grid-area: footer;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-row: auto;
+        grid-template-areas:
+        "header"
+        "gamestatus"
+        "computerscore"
+        "computerhand"
+        "vsicon"
+        "playerscore"
+        "playerhand"
+        "rps"
+        "reset"
+        "footer";
+    }
+}
